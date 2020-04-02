@@ -1,2 +1,6 @@
-SELECT products_name AS NAMES, model_year AS YearModel, list_price as Price, category_id as category, brands_name as brand
-FROM categories
+SELECT name, model_year, price, nameCat, brand_name
+FROM products, brands, categories
+WHERE category_id = idCat
+AND products.brand_id = brands.brand_id
+AND brand_name = 'Haro'
+AND nameCat = 'Electric Bikes'
