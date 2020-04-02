@@ -13,3 +13,9 @@ WHERE category_id = idCat
 AND products.brand_id = brands.brand_id
 AND brand_name = 'Trek'
 AND nameCat = 'Electric Bikes'
+
+----
+
+SELECT name, price
+FROM products
+WHERE 500 <= price <= 1500
