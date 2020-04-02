@@ -19,3 +19,17 @@ AND nameCat = 'Electric Bikes'
 SELECT name, price
 FROM products
 WHERE 500 <= price <= 1500
+
+----
+
+SELECT name, model_year, price, brand_name
+FROM products, brands
+WHERE products.brand_id = brands.brand_id
+AND brand_name like "H%"
+
+----
+
+SELECT name, model_year, price, brand_name
+FROM products, brands
+WHERE products.brand_id = brands.brand_id
+AND brand_name like "%lce%"
