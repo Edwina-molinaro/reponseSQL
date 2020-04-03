@@ -27,9 +27,26 @@ FROM products, brands
 WHERE products.brand_id = brands.brand_id
 AND brand_name like "H%"
 
+SELECT name, model_year, price, brand_name
+FROM products, brands, categories
+WHERE brand_name like "H%"
+
 ----
 
 SELECT name, model_year, price, brand_name
 FROM products, brands
 WHERE products.brand_id = brands.brand_id
 AND brand_name like "%lce%"
+
+SELECT     products.name, 
+        products.model_year, 
+        products.price AS PrixHT
+FROM products
+WHERE products.name LIKE "%lce%"
+
+----
+
+DELETE FROM brands
+WHERE brand_name = 'Trek'
+
+----
