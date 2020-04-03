@@ -50,3 +50,8 @@ DELETE FROM brands
 WHERE brand_name = 'Trek'
 
 ----
+
+DELETE FROM categories
+WHERE nameCat = '*'
+
+----
