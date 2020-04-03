@@ -55,3 +55,9 @@ DELETE FROM categories
 WHERE nameCat = '*'
 
 ----
+
+update products 
+set price = 1499
+WHERE products.id ='9'
+
+----
