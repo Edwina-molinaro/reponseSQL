@@ -61,3 +61,8 @@ set price = 1499
 WHERE products.id ='9'
 
 ----
+
+INSERT INTO categories (categories.nameCat)
+VALUES ('Roller skates')
+
+----
